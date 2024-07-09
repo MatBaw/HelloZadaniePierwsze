@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Greeting</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Podaj swoje dane</h1>
+<form action="#" th:action="@{/}" th:object="${user}" method="post">
+    <p>Imię: <input type="text" th:field="*{name}" /></p>
+    <p>Rok urodzenia: <input type="number" th:field="*{rokUrodzenia}" /></p>
+    <p><input type="submit" value="Wyślij" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>
